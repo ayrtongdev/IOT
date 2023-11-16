@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "Gravily",
-    "slug": "Gravily",
+    "name": "Recicla",
+    "slug": "Recicla",
+    "plugins": ["@react-native-google-signin/google-signin"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +19,20 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ayrtong.Gravily"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f92ed851-14f9-491d-8cdc-36815470ffa7"
+      }
     }
   }
 }
